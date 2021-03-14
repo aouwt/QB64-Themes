@@ -57,18 +57,11 @@ SUB __UI_LoadForm
     Control(__UI_NewID).VAlign = __UI_Middle
     Control(__UI_NewID).BorderSize = 1
 
-    __UI_NewID = __UI_NewControl(__UI_Type_DropdownList, "CB_Repos", 570, 23, 10, 15, __UI_GetID("FR_Repository"))
-    __UI_RegisterResult = 0
-    AddItem __UI_NewID, "www.github.com/all-other-usernames-were-taken/QB64-Themes/branch/main/repolist.qbtrepo"
-    Control(__UI_NewID).HasBorder = True
-    Control(__UI_NewID).Value = 1
-    Control(__UI_NewID).CanHaveFocus = True
-    Control(__UI_NewID).BorderSize = 1
-
     __UI_NewID = __UI_NewControl(__UI_Type_ProgressBar, "PB_Repo", 497, 23, 83, 43, __UI_GetID("FR_Repository"))
     __UI_RegisterResult = 0
-    SetCaption __UI_NewID, "\92;#"
+    SetCaption __UI_NewID, "Idle"
     Control(__UI_NewID).Max = 100
+    Control(__UI_NewID).ShowPercentage = True
 
     __UI_NewID = __UI_NewControl(__UI_Type_Button, "BT_DownloadRepo", 80, 23, 10, 43, __UI_GetID("FR_Repository"))
     __UI_RegisterResult = 0
@@ -88,6 +81,14 @@ SUB __UI_LoadForm
     SetCaption __UI_NewID, "Save"
     Control(__UI_NewID).CanHaveFocus = True
 
+    __UI_NewID = __UI_NewControl(__UI_Type_TextBox, "TB_RepoURL", 570, 23, 10, 15, __UI_GetID("FR_Repository"))
+    __UI_RegisterResult = 0
+    SetCaption __UI_NewID, "URL of repository"
+    Text(__UI_NewID) = "file:///home/hmstve/git/me/QB64-Themes/repofile"
+    Control(__UI_NewID).HasBorder = True
+    Control(__UI_NewID).CanHaveFocus = True
+    Control(__UI_NewID).BorderSize = 1
+
 END SUB
 
 SUB __UI_AssignIDs
@@ -99,9 +100,9 @@ SUB __UI_AssignIDs
     BT_AddTheme = __UI_GetID("BT_AddTheme")
     IM_ThemePreview = __UI_GetID("IM_ThemePreview")
     LB_Description = __UI_GetID("LB_Description")
-    CB_Repos = __UI_GetID("CB_Repos")
     PB_Repo = __UI_GetID("PB_Repo")
     BT_DownloadRepo = __UI_GetID("BT_DownloadRepo")
     TB_ConfigPath = __UI_GetID("TB_ConfigPath")
     BT_SaveConfig = __UI_GetID("BT_SaveConfig")
+    TB_RepoURL = __UI_GetID("TB_RepoURL")
 END SUB

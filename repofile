@@ -1,0 +1,45 @@
+# QB64 Themes
+#
+# Theme template: (spacing is not necessarry)
+#
+## author Your name
+## date Date it was added
+## desc
+##  Short description of the theme
+## .
+## theme Theme data goes here
+##.
+# You can add more parameters (eg. website, license, etc.) or remove some of them if you want.
+# You cannot add any other multi-line parameters, though.
+
+
+# Repository metadata
+!origin local
+!reponame Local (test) repository
+# Don't bother changing this value, it sets the minimum size needed for the Themes() array.
+!themecount 10
+
+
+
+# Theme data
+
+ author all-other-usernames-were-taken
+ desc
+  High contrast theme, light version.
+ .
+ theme High Contrast Light|000000000000000108245000000137000039000088000098137088255255255245255088000147177
+.
+
+ author all-other-usernames-were-taken
+ desc
+  High contrast theme, dark version.
+ .
+ theme High Contrast Dark|255255255000157255245049078206177000000255000255078245000000000020020029000147147
+.
+
+ author all-other-usernames-were-taken
+ desc
+  Dark theme; optimized for use at night.
+ .
+ theme Night Coder|226226226039157000245128177137137137177196000196118000000000000049049049098098098
+.
