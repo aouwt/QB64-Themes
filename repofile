@@ -43,3 +43,83 @@
  .
  theme Night Coder|226226226039157000245128177137137137177196000196118000000000000049049049098098098
 .
+
+ author QB64 Team
+ desc
+  QB64 Built-in theme "Super dark blue"
+  For testing purposes only.
+ .
+ theme Super dark blue|216216216069118147216098078255167000085206085098098098000000039000049078000088108
+.
+
+ author QB64 Team
+ desc
+  QB64 Built-in theme "Dark blue"
+  For testing purposes only.
+ .
+ theme Dark blue|226226226069147216245128177255177000085255085049196196000000069000068108000147177
+.
+
+ author QB64 Team
+ desc
+  QB64 Built-in theme "QB64 Original"
+  For testing purposes only.
+ .
+ theme QB64 Original|226226226147196235245128177255255085085255085085255255000000170000108177000147177
+.
+
+ author QB64 Team
+ desc
+  QB64 Built-in theme "Classic QB4.5"
+  For testing purposes only.
+ .
+ theme Classic QB4.5|177177177177177177177177177177177177177177177177177177000000170000000170000147177
+.
+
+ author QB64 Team
+ desc
+  QB64 Built-in theme "CF Dark"
+  For testing purposes only.
+ .
+ theme CF Dark|226226226115222227255043138255178034185237049157118137043045037010000020088088088
+.
+
+ author QB64 Team
+ desc
+  QB64 Built-in theme "Dark side"
+  For testing purposes only.
+ .
+ theme Dark side|255255255206206000245010098000177000085255085049186245011022029100100100000147177
+.
+
+ author QB64 Team
+ desc
+  QB64 Built-in theme "Camouflage"
+  For testing purposes only.
+ .
+ theme Camouflage|196196196255255255245128177255177000137177147147137020000039029098069020000147177
+.
+
+ author QB64 Team
+ desc
+  QB64 Built-in theme "Plum"
+  For testing purposes only.
+ .
+ theme Plum|186186186255255255245128177255108000085186078085186255059000059088088128000147177
+.
+
+ author QB64 Team
+ desc
+  QB64 Built-in theme "Light green"
+  For testing purposes only.
+ .
+ theme Light green|051051051000000216245128177255157255147177093206206206234255234206255206000147177
+.
+
+ author QB64 Team
+ desc
+  QB64 Built-in theme "All white"
+  For testing purposes only.
+ .
+ theme All white|051051051000000216245128177206147000059177000206206206255255255245245245000147177
+.

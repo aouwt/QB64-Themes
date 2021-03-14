@@ -84,7 +84,7 @@ SUB __UI_LoadForm
     __UI_NewID = __UI_NewControl(__UI_Type_TextBox, "TB_RepoURL", 570, 23, 10, 15, __UI_GetID("FR_Repository"))
     __UI_RegisterResult = 0
     SetCaption __UI_NewID, "URL of repository"
-    Text(__UI_NewID) = "file:///home/hmstve/git/me/QB64-Themes/repofile"
+    Text(__UI_NewID) = "https://raw.githubusercontent.com/all-other-usernames-were-taken/QB64-Themes/add-theme-browser/repofile"
     Control(__UI_NewID).HasBorder = True
     Control(__UI_NewID).CanHaveFocus = True
     Control(__UI_NewID).BorderSize = 1

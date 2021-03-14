@@ -44,6 +44,8 @@ SUB ParseRepofile (QML$) 'Based on the SCS loader for stupidc
     Control(PB_Repo).Min = 0
     Control(PB_Repo).Max = LEN(QML$)
     SetCaption PB_Repo, "Parsing... \#%"
+    ResetList LI_ThemeList
+    REDIM Themes(100) AS ThemeType
     DO
         GOSUB NewLine
         IF Ln$ = CHR$(0) THEN EXIT DO
@@ -150,8 +152,8 @@ SUB UpdateSample (scheme AS STRING * 81)
 
     'PRINT scheme
     CLS , BackgroundColor
-    COLOR CommentColor, BackgroundColor: PRINT "'";
-    COLOR MetaCommandColor, BackgroundColor: PRINT "$DYNAMIC"
+    COLOR CommentColor, BackgroundColor2: PRINT "'";
+    COLOR MetaCommandColor, BackgroundColor2: PRINT "$DYNAMIC"; SPACE$((_WIDTH / _FONTWIDTH) - POS(0));
     COLOR KeywordColor, BackgroundColor: PRINT "DIM ";
     COLOR TextColor, BackgroundColor: PRINT "Arr";
     COLOR TextColor, BracketHighlightColor: PRINT "(";
@@ -316,8 +318,9 @@ SUB __UI_Click (id AS LONG)
                     SHELL _DONTWAIT "curl '" + Text(TB_RepoURL) + "' -o- | " + COMMAND$(0) + " WGETINPUT " + tcp$
                 $ELSE
                     SetCaption PB_Repo, "Downloading..."
-                    SHELL "curl '" + Text(TB_RepoURL) + "' -o ./repofile"
-                    ParseRepofile StripWinNL$(GetFile$("repofile"))
+                    SHELL "curl '" + Text(TB_RepoURL) + "' -o /tmp/repofile"
+                    ParseRepofile StripWinNL$(GetFile$("/tmp/repofile"))
+                    KILL "/tmp/repofile"
                 $END IF
             END IF
             Control(BT_DownloadRepo).Disabled = 0
